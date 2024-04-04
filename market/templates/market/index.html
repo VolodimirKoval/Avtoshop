@@ -81,7 +81,7 @@
                                     <div class="card-footer text-center">
                                         <a class="btn btn-outline-success" href="{% url 'products:basket_add' product.id %}">
                                             Додати в кошик
-                                        </a> 
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -91,8 +91,8 @@
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-center">
                             <li class="page-item {% if not products.has_previous %} disabled {% endif %}">
-                                <a class="page-link" 
-                                   href="{% if products.has_previous %} {% url 'products:paginator' products.previous_page_number %} {% else %} # {% endif %}" 
+                                <a class="page-link"
+                                   href="{% if products.has_previous %} {% url 'products:paginator' products.previous_page_number %} {% else %} # {% endif %}"
                                    tabindex="-1" aria-disabled="true">
                                     Попередня
                                 </a>
@@ -105,8 +105,8 @@
                                 </li>
                             {% endfor %}
                             <li class="page-item {% if not products.has_next %} disabled {% endif %} ">
-                                <a class="page-link" 
-                                   href="{% if products.has_next %} {% url 'products:paginator' products.next_page_number %} 
+                                <a class="page-link"
+                                   href="{% if products.has_next %} {% url 'products:paginator' products.next_page_number %}
                                     {% else %} # {% endif %}">
                                     Наступна
                                 </a>
@@ -129,8 +129,8 @@
             <div class="container">
                 <p class="m-0 text-center text-white">
                     Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> 
-                    All rights reserved | This template is made with 
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | This template is made with
                     <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">
                     CreativeVolodya</a>
                 </p>
